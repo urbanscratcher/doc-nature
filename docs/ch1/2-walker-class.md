@@ -4,8 +4,4 @@ sidebar_position: 2
 
 # 2. 워커 클래스
 
-Let's discover **Docusaurus in less than 5 minutes**.
-
-## Getting Started
-
-Get started by **creating a new site**.
+## 객체 지향 프로그래밍(Object Oriented Programming, OOP)
