@@ -6,6 +6,9 @@
 - 지나치게 기본적인 내용은 생략합니다.
 - 필요에 따라 참고 자료가 추가될 수 있습니다.
 
+## URL
+https://note-nature-of-code.netlify.app/
+
 ## 참고 자료
 
 - 책: The Nature of Code (processing)
