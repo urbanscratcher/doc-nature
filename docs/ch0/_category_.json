@@ -1,0 +1,10 @@
+{
+  "label": "0장 랜덤성",
+  "position": 2,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "0장 랜덤성",
+    "description": "랜덤워크, 비균등 분포, 정규 분포, 레비의 비행, 몬테 카를로 수락-거부 알고리즘, 펄린 노이즈 등 랜덤성에 대해 알아봅니다"
+  }
+}
