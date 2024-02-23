@@ -3,6 +3,6 @@
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Introduction"
+    "description": "랜덤워크, 비균등 분포, 정규 분포, 레비의 비행, 몬테 카를로 수락-거부 알고리즘, 펄린 노이즈 등 랜덤성에 대해 알아봅니다"
   }
 }
