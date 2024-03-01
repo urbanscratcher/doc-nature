@@ -4,6 +4,8 @@ sidebar_position: 7
 
 # 7. 속도와 벡터를 활용한 이동
 
+## 속도와 벡터의 활용
+
 - 화면을 움직이는 개체를 나타는 무버(Mover) 클래스 구현
   - 무버 클래스의 속성
     - 위치(location)
@@ -66,5 +68,7 @@ function draw() {
   mover.display();
 }
 ```
+
+### 예제 코드 1.7: 속도와 벡터를 활용한 움직임
 
 <iframe width="640px" height="282px" src="https://editor.p5js.org/urbanscratcher/full/58_svZrln"></iframe>

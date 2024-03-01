@@ -114,7 +114,9 @@ class Walker {
 }
 ```
 
-  <iframe width="640px" height="282px" src="https://editor.p5js.org/urbanscratcher/full/A1ZaxLM5n"></iframe>
+### 예제 코드 0.6: 펄린 노이즈 워커
+
+  <iframe  class="editor" src="https://editor.p5js.org/urbanscratcher/full/A1ZaxLM5n"></iframe>
 
 - tx, ty를 각각 0, 10000로 초기화 한 이유
 
@@ -210,6 +212,8 @@ step() {
     xoff += 0.01;
   }
   ```
+
+### 예제 코드 0.6: 2차원 펄린 노이즈
 
   <iframe width="400px" height="450px" src="https://editor.p5js.org/urbanscratcher/full/j-z5L9iQ0"></iframe>
 

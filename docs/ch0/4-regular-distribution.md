@@ -23,7 +23,7 @@ sidebar_position: 4
 - 그래프로는 종 모양의 그래프가 나옴
 - 종 모양의 곡선은 주어진 값의 확률적 평균($\mu$)과 표준 편차($\sigma$)를 이용한 수학적 함수로 그려짐
 
-### 표준 편차
+## 표준 편차
 
 :::note[평균과 표준편차 계산]
 
@@ -86,14 +86,16 @@ function draw() {
 }
 ```
 
-  <iframe width="640px" height="282px" src="https://editor.p5js.org/urbanscratcher/full/_jZJO5nTb"></iframe>
+### 예제 코드 0.4: 가우시안 분포
+
+  <iframe class="editor" src="https://editor.p5js.org/urbanscratcher/full/_jZJO5nTb"></iframe>
 
 :::info[연습문제 0.4]
 
 색상이 있는 점을 많이 사용해 흩뿌려진 물감을 시뮬레이션 하는 경우, 점 대부분은 중심에 가깝게 찍히고, 일부 점만 외곽에 찍히도록 만들어 보기. 점 색상을 선택할 때도 정규 분포를 이용해 보기.
 
 - 아래 코드에서는 클릭시 100개의 물감이 흩뿌려짐
-<iframe width="640px" height="282px" src="https://editor.p5js.org/urbanscratcher/full/R3eXaveI9"></iframe>
+<iframe class="editor" src="https://editor.p5js.org/urbanscratcher/full/R3eXaveI9"></iframe>
 :::
 
 :::info[연습문제 0.5]
@@ -109,5 +111,5 @@ step() {
 }
 ```
 
-<iframe  width="640px" height="282px" src="https://editor.p5js.org/urbanscratcher/full/LHqHIplF2"></iframe>
+<iframe class="editor" src="https://editor.p5js.org/urbanscratcher/full/LHqHIplF2"></iframe>
 :::

@@ -116,7 +116,7 @@ function draw() {
 
 ### 예제 코드 0.1: 전통적인 랜덤 워크
 
-<iframe width="650px" height="300px" src="https://editor.p5js.org/urbanscratcher/full/4RHUMOtPR"></iframe>
+<iframe class="editor" src="https://editor.p5js.org/urbanscratcher/full/4RHUMOtPR"></iframe>
 
 ## 8방향 이동
 
@@ -158,7 +158,7 @@ function draw() {
 
 ### 예제 코드 0.2: 랜덤 분포
 
-<iframe width="650px" height="300px" src="https://editor.p5js.org/urbanscratcher/full/HLYvO4p83"></iframe>
+<iframe class="editor" src="https://editor.p5js.org/urbanscratcher/full/HLYvO4p83"></iframe>
 
 :::note[유사 임의 값(pseudo-random number)]
 

@@ -48,7 +48,9 @@ sidebar_position: 1
   }
   ```
 
-  <iframe width="640px" height="282px" src="https://editor.p5js.org/urbanscratcher/full/A8UlWzjXO"></iframe>
+### 예제 코드 1.1: 벡터를 사용하지 않은 탱탱볼
+
+  <iframe class="editor" src="https://editor.p5js.org/urbanscratcher/full/A8UlWzjXO"></iframe>
 
 - 속도, 위치 외에도 물리 법칙을 추가하면 다양한 요소들이 추가될 수 있음
   | 속성 | 변수명 |

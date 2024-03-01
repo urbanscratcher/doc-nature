@@ -68,7 +68,9 @@ function acceptReject() {
 }
 ```
 
-<iframe width="640px" height="282px" src="https://editor.p5js.org/urbanscratcher/full/_O6GR9pba"></iframe>
+### 예제 코드 0.5: 수락-거절 알고리즘의 확률 분포
+
+<iframe  class="editor"  src="https://editor.p5js.org/urbanscratcher/full/_O6GR9pba"></iframe>
 
 :::info[연습문제 0.6]
 직접 만든 확률 분포를 사용해 랜덤 워크의 스텝 크기가 계속 변경되게 만들기

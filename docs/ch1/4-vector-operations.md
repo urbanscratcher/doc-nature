@@ -63,6 +63,8 @@ sub(v) {
   }
   ```
 
+### 예제 코드 1.3: 벡터 뺄셈
+
   <iframe width="300px" height="342px" src="https://editor.p5js.org/urbanscratcher/full/1A7KUoboe"></iframe>
 
 - 벡터 연산은 고유한 translation이 이루어지는 것으로, **`translate()`** 을 이용해 위치 벡터의 오리진을 이동시켜줘야 함
@@ -102,6 +104,8 @@ function draw() {
   line(0, 0, mouse.x, mouse.y);
 }
 ```
+
+### 예제 코드 1.3: 벡터 곱셈
 
 <iframe width="300px" height="342px" src="https://editor.p5js.org/urbanscratcher/full/bcctY03Wl"></iframe>
 

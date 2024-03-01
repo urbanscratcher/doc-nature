@@ -30,4 +30,6 @@ function draw() {
 }
 ```
 
-<iframe width="640px" height="282px" src="https://editor.p5js.org/urbanscratcher/full/ikHsKrdW2"></iframe>
+### 예제 코드 1.5: 벡터 크기
+
+<iframe class="editor" src="https://editor.p5js.org/urbanscratcher/full/ikHsKrdW2"></iframe>

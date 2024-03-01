@@ -4,6 +4,8 @@ sidebar_position: 6
 
 # 6. 벡터 정규화
 
+## 벡터 정규화
+
 - 벡터에서 표준은 길이가 1인 벡터인 **단위 벡터(unit vector)**
 - 벡터를 정규화한다는 것은 방향은 유지하고, 길이만 1로 변경하는 것
 - <img width="200px" src="https://natureofcode.com/static/cceaa06da952441c0e507fc131e6875a/a7874/01_vectors_15.webp"/>
@@ -43,4 +45,6 @@ function draw() {
 }
 ```
 
-<iframe width="640px" height="282px" src="https://editor.p5js.org/urbanscratcher/full/8bnhmE3P5"></iframe>
+### 예제 코드 1.6: 벡터 정규화
+
+<iframe class="editor" src="https://editor.p5js.org/urbanscratcher/full/8bnhmE3P5"></iframe>

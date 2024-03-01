@@ -67,7 +67,9 @@ sidebar_position: 3
   }
   ```
 
-  <iframe width="640px" height="282px" src="https://editor.p5js.org/urbanscratcher/full/GmszeLppO"></iframe>
+### 예제 코드 1.2: 벡터를 사용한 탱탱볼
+
+  <iframe class="editor" src="https://editor.p5js.org/urbanscratcher/full/GmszeLppO"></iframe>
 
 :::info[연습문제 1.1]
 이전에 만든 예제가 있다면 x, y가 따로 작성된 코드를 벡터 클래스를 사용해 변경해보기
@@ -80,5 +82,5 @@ sidebar_position: 3
 :::info[연습문제 1.3]
 튕기는 공 예제를 3차원으로 만들어 보기. 공이 사각형 평면이 아니라 3차원 정육면체에서 돌아다니도록 만들기.
 
-<iframe width="420px" height="450px" src="https://editor.p5js.org/urbanscratcher/full/LZpMiPnm5"></iframe>
+<iframe width="410px" height="450px" src="https://editor.p5js.org/urbanscratcher/full/LZpMiPnm5"></iframe>
 :::

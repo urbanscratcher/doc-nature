@@ -106,40 +106,42 @@ step() {
 }
 ```
 
-<iframe width="650px" height="300px" src="https://editor.p5js.org/urbanscratcher/full/VabnV4D_Z"></iframe>
+### 예제 코드 0.3: 오른쪽으로 갈 확률이 높은 랜덤 워크
+
+<iframe class="editor" src="https://editor.p5js.org/urbanscratcher/full/VabnV4D_Z"></iframe>
 
 :::info[연습문제 0.3]
 실시간으로 워커 클래스가 움직이는 방향을 변경해 보기. 예를 들어 마우스 커서가 있는 방향으로 움직일 확률을 50%로 만들기
 
 ```js
-step() {
-  const r = random(1);
+  step() {
+    const r = random(1);
 
-  if(r < 0.5) {
-    if (this.x > mouseX && this.y > mouseY){
-      this.x--;
-      this.y--;
-    } else if(this.x > mouseX && this.y < mouseY){
-      this.x--;
-      this.y++;
-    } else if(this.x < mouseX && this.y > mouseY){
-      this.x++;
-      this.y--;
+    if(r < 0.5) {
+      if (this.x > mouseX && this.y > mouseY){
+        this.x--;
+        this.y--;
+      } else if(this.x > mouseX && this.y < mouseY){
+        this.x--;
+        this.y++;
+      } else if(this.x < mouseX && this.y > mouseY){
+        this.x++;
+        this.y--;
+      } else {
+        this.x++;
+        this.y++;
+      }
     } else {
-      this.x++;
-      this.y++;
+      const rx = random(-1, 1);
+      const ry = random(-1, 1);
+      this.x += rx;
+      this.y += ry;
     }
-  } else {
-    const rx = random(-1, 1);
-    const ry = random(-1, 1);
-    this.x += rx;
-    this.y += ry;
-  }
 
-  this.x = constrain(this.x, 0, width - 1);
-  this.y = constrain(this.y, 0, height - 1);
-}
+    this.x = constrain(this.x, 0, width - 1);
+    this.y = constrain(this.y, 0, height - 1);
+  }
 ```
 
-<iframe width="650rem" height="300rem" src="https://editor.p5js.org/urbanscratcher/full/y8ZWn3VUH"></iframe>
+  <iframe class="editor" src="https://editor.p5js.org/urbanscratcher/full/y8ZWn3VUH"></iframe>
 :::
