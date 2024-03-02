@@ -1,7 +1,7 @@
 {
   "label": "1장 벡터",
   "position": 2,
-  "collapsed": false,
+  "collapsed": true,
   "link": {
     "type": "generated-index",
     "description": "벡터 연산, 벡터 정규화, 속도와 가속도를 이용한 벡터 이동, 정적 함수, 가속도와 상호작용에 관해 알아봅니다."
