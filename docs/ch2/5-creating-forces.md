@@ -3,3 +3,152 @@ sidebar_position: 5
 ---
 
 # 5. 힘 생성
+
+## 1. 그냥 만들기
+
+- 오른쪽에서 부는 약한 바람, 중력 적용
+
+```js
+const wind = new createVector(0.01, 0);
+const gravity = new createVector(0, 0.1);
+mover.applyForce(wind);
+mover.applyForce(gravity);
+```
+
+<iframe width="660" height="340" src="https://editor.p5js.org/urbanscratcher/full/oUuWWS-FI"></iframe>
+
+### 질량이 다른 객체들
+
+- Mover 클래스 정의
+
+```js
+class Mover {
+  // 질량, 위치를 매개변수화
+  constructor(m, x, y) {
+    this.location = createVector(x, y);
+    this.velocity = createVector(0, 0);
+    this.acceleration = createVector(0, 0);
+    this.mass = m;
+  }
+
+  applyForce(force) {
+    const f = p5.Vector.div(force, this.mass);
+    this.acceleration.add(f);
+  }
+
+  update() {
+    this.velocity.add(this.acceleration);
+    this.location.add(this.velocity);
+    this.acceleration.mult(0);
+  }
+
+  display() {
+    stroke(0);
+    fill(175);
+
+    // 질량만큼의 크기를 가진 객체
+    ellipse(this.location.x, this.location.y, this.mass * 16, this.mass * 16);
+  }
+
+  // 모서리에 닿으면 반대 방향으로 튕기도록 함
+  checkEdges() {
+    if (this.location.x > width) {
+      this.location.x = width;
+      this.velocity.x *= -1;
+    } else if (this.location.x < 0) {
+      this.velocity.x *= -1;
+      this.location.x = 0;
+    }
+
+    if (this.location.y > height) {
+      this.velocity.y *= -1;
+      this.location.y = height;
+    }
+  }
+}
+```
+
+- 객체 100개 만들기
+
+```js
+let movers;
+function setup() {
+  createCanvas(400, 400);
+  movers = Array.from({ length: 100 }, () => new Mover(random(0.1, 5), 0, 0));
+}
+
+function draw() {
+  background(255);
+
+  // 힘 생성
+  const wind = createVector(0.01, 0);
+  const gravity = createVector(0, 0.1);
+
+  movers.forEach((m) => {
+    // 힘 적용
+    m.applyForce(wind);
+    m.applyForce(gravity);
+
+    m.update();
+    m.display();
+    m.checkEdges();
+  });
+}
+```
+
+- 질량과 가속도가 반비례하는 모습을 볼 수 있음
+<iframe class="editor" src="https://editor.p5js.org/urbanscratcher/full/O_Q0rnZVe"></iframe>
+
+:::info[연습문제 2.3]
+원이 화면의 모서리에 닿으면 튕기지 않고, 다른 힘으로 밀어보기. 힘을 따로 만들어주고, 원을 밀어 화면 안에 유지시켜보기. 모서리에서 멀고 가까운 강도 조절해보기. 예를 들어 모서리에 가까울수록 강한 힘으로 밀기.
+
+<iframe class="editor" src="https://editor.p5js.org/urbanscratcher/full/tumz-TO_n"></iframe>
+<iframe class="editor" src="https://editor.p5js.org/urbanscratcher/full/lZJTD9oXV"></iframe>
+:::
+
+:::info[연습문제 2.4]
+원의 중심이 아니라 가장자리가 측면에 닿을 때 원의 방향이 변경되도록 수정
+
+<iframe class="editor" src="https://editor.p5js.org/urbanscratcher/full/4F2UkkQSV"></iframe>
+:::
+
+:::info[연습문제 2.5]
+바람을 변수로 만들어 상호작용이 가능하도록 하기. 예를 들어, 마우스 위치에서 원 쪽으로 바람 불게 하기.
+
+<iframe  width="640" height="450" src="https://editor.p5js.org/urbanscratcher/full/KOLL4Xyau"></iframe>
+:::
+
+## 2. 모방
+
+- 위 예제는 바람의 힘은 잘 나타낼 수 있음
+- 하지만 질량이 다른 물체의 중력 가속도는 동일하므로, 중력을 잘 나타내지는 못함 (피사의 사탑)
+- 중력은 물체의 질량이 클수록 더 크게 작용하기 때문
+- 따라서 크기가 크면 중력을 더 강하게 작용해줘야 함
+
+```js
+const wind = createVector(0.001, 0);
+movers.forEach((m) => {
+  // 중력 보정
+  const gravity = createVector(0, 0.1 * m.mass);
+
+  m.applyForce(wind);
+  m.applyForce(gravity);
+
+  m.update();
+  m.display();
+  m.checkEdges();
+});
+```
+
+### 질량에 따라 중력 다르게 작용하기
+
+```js
+let gravity = createVector(0, 0.1);
+
+let gravityA = p5.Vector.mult(gravity, moverA.mass);
+moverA.applyForce(gravityA);
+let gravityB = p5.Vector.mult(gravity, moverB.mass);
+moverB.applyForce(gravityB);
+```
+
+<iframe width="650" height="340" src="https://editor.p5js.org/urbanscratcher/full/8HLucS8br"></iframe>
