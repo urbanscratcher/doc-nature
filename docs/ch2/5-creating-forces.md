@@ -4,8 +4,6 @@ sidebar_position: 5
 
 # 5. 힘 생성
 
-## 1. 그냥 만들기
-
 - 오른쪽에서 부는 약한 바람, 중력 적용
 
 ```js
@@ -17,7 +15,7 @@ mover.applyForce(gravity);
 
 <iframe width="660" height="340" src="https://editor.p5js.org/urbanscratcher/full/oUuWWS-FI"></iframe>
 
-### 질량이 다른 객체들
+## 질량이 다른 객체들
 
 - Mover 클래스 정의
 
@@ -68,7 +66,7 @@ class Mover {
 }
 ```
 
-- 객체 100개 만들기
+### 객체 100개 만들기
 
 ```js
 let movers;
@@ -117,38 +115,3 @@ function draw() {
 
 <iframe  width="640" height="450" src="https://editor.p5js.org/urbanscratcher/full/KOLL4Xyau"></iframe>
 :::
-
-## 2. 모방
-
-- 위 예제는 바람의 힘은 잘 나타낼 수 있음
-- 하지만 질량이 다른 물체의 중력 가속도는 동일하므로, 중력을 잘 나타내지는 못함 (피사의 사탑)
-- 중력은 물체의 질량이 클수록 더 크게 작용하기 때문
-- 따라서 크기가 크면 중력을 더 강하게 작용해줘야 함
-
-```js
-const wind = createVector(0.001, 0);
-movers.forEach((m) => {
-  // 중력 보정
-  const gravity = createVector(0, 0.1 * m.mass);
-
-  m.applyForce(wind);
-  m.applyForce(gravity);
-
-  m.update();
-  m.display();
-  m.checkEdges();
-});
-```
-
-### 질량에 따라 중력 다르게 작용하기
-
-```js
-let gravity = createVector(0, 0.1);
-
-let gravityA = p5.Vector.mult(gravity, moverA.mass);
-moverA.applyForce(gravityA);
-let gravityB = p5.Vector.mult(gravity, moverB.mass);
-moverB.applyForce(gravityB);
-```
-
-<iframe width="650" height="340" src="https://editor.p5js.org/urbanscratcher/full/8HLucS8br"></iframe>
