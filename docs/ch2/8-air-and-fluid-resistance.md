@@ -115,7 +115,7 @@ function setup() {
   createCanvas(640, 240);
   reset();
 
-  movers = Array.from({ length: 5 }, (m, i) => {
+  movers = Array.from({ length: 9 }, (m, i) => {
     const mass = random(0.1, 5);
     return new Mover(40 + i * 70, 0, mass);
   });
