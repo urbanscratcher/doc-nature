@@ -35,7 +35,7 @@ sub(v) {
 }
 ```
 
-- 마우스 위치와 화면 중심 좌표를 벡터로 만들고, 벡터 뺄셈 결과 출력
+- 마우스 위치와 화면 중심 좌표를 벡터로 만들고, 벡터 뺄셈 결과를 출력합니다.
 
   ```js
   function draw() {
@@ -67,12 +67,12 @@ sub(v) {
 
   <iframe width="300px" height="342px" src="https://editor.p5js.org/urbanscratcher/full/1A7KUoboe"></iframe>
 
-- 벡터 연산은 고유한 translation이 이루어지는 것으로, **`translate()`** 을 이용해 위치 벡터의 오리진을 이동시켜줘야 함
+- 벡터 연산은 고유한 translation이 이루어지는 것으로, **`translate()`** 을 이용해 위치 벡터의 오리진을 이동시켜줘야 합니다.
 
 ## 벡터 곱셈
 
-- 일반적으로 벡터 곱셈은 크기 변환(스케일링) 연산을 의미
-- 중요한 것은 벡터를 다른 벡터와 곱세하는 것이 아니라 스칼라와 곱셈을 한다는 개념임
+- 일반적으로 벡터 곱셈은 크기 변환(스케일링) 연산을 의미합니다.
+- 중요한 것은 벡터를 다른 벡터와 곱세하는 것이 아니라 스칼라와 곱셈을 한다는 개념입니다.
 
 <img width="350px" src="https://natureofcode.com/static/ae411ca6c28148e6a3d06ca4b52d2c20/aeed6/01_vectors_10.webp" />
 
@@ -111,7 +111,7 @@ function draw() {
 
 ## 벡터 나눗셈
 
-- 벡터 곱셈과 같은 방식으로 작동
+- 벡터 곱셈과 같은 방식으로 작동합니다.
 
 ```js
 div(n){

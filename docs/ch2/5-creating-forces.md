@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # 5. 힘 생성
 
-- 오른쪽에서 부는 약한 바람, 중력 적용
+- 오른쪽에서 부는 약한 바람, 중력 적용해 보아요.
 
 ```js
 const wind = new createVector(0.01, 0);
@@ -17,7 +17,7 @@ mover.applyForce(gravity);
 
 ## 질량이 다른 객체들
 
-- Mover 클래스 정의
+- Mover 클래스를 정의해요.
 
 ```js
 class Mover {
@@ -94,24 +94,24 @@ function draw() {
 }
 ```
 
-- 질량과 가속도가 반비례하는 모습을 볼 수 있음
+- 질량과 가속도가 반비례하는 모습을 볼 수 있습니다.
 <iframe class="editor" src="https://editor.p5js.org/urbanscratcher/full/O_Q0rnZVe"></iframe>
 
 :::info[연습문제 2.3]
-원이 화면의 모서리에 닿으면 튕기지 않고, 다른 힘으로 밀어보기. 힘을 따로 만들어주고, 원을 밀어 화면 안에 유지시켜보기. 모서리에서 멀고 가까운 강도 조절해보기. 예를 들어 모서리에 가까울수록 강한 힘으로 밀기.
+원이 화면의 모서리에 닿으면 튕기지 않고, 다른 힘으로 밀어보아요. 힘을 따로 만들어주고, 원을 밀어 화면 안에 유지시켜보아요. 모서리에서 멀고 가까운 강도 조절해봅시다. 예를 들어 모서리에 가까울수록 강한 힘으로 밀어요.
 
 <iframe class="editor" src="https://editor.p5js.org/urbanscratcher/full/tumz-TO_n"></iframe>
 <iframe class="editor" src="https://editor.p5js.org/urbanscratcher/full/lZJTD9oXV"></iframe>
 :::
 
 :::info[연습문제 2.4]
-원의 중심이 아니라 가장자리가 측면에 닿을 때 원의 방향이 변경되도록 수정
+원의 중심이 아니라 가장자리가 측면에 닿을 때 원의 방향이 변경되도록 수정해 보아요.
 
 <iframe class="editor" src="https://editor.p5js.org/urbanscratcher/full/4F2UkkQSV"></iframe>
 :::
 
 :::info[연습문제 2.5]
-바람을 변수로 만들어 상호작용이 가능하도록 하기. 예를 들어, 마우스 위치에서 원 쪽으로 바람 불게 하기.
+바람을 변수로 만들어 상호작용이 가능하도록 만들어 봅시다. 예를 들어, 마우스 위치에서 원 쪽으로 바람을 불게 해 보아요.
 
 <iframe  width="640" height="450" src="https://editor.p5js.org/urbanscratcher/full/KOLL4Xyau"></iframe>
 :::

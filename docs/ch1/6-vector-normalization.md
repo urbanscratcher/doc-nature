@@ -6,8 +6,8 @@ sidebar_position: 6
 
 ## 벡터 정규화
 
-- 벡터에서 표준은 길이가 1인 벡터인 **단위 벡터(unit vector)**
-- 벡터를 정규화한다는 것은 방향은 유지하고, 길이만 1로 변경하는 것
+- 벡터에서 표준은 길이가 1인 벡터인 **단위 벡터(unit vector)** 입니다.
+- 벡터를 정규화한다는 것은 방향은 유지하고, 길이만 1로 변경한다는 의미 입니다.
 - <img width="200px" src="https://natureofcode.com/static/cceaa06da952441c0e507fc131e6875a/a7874/01_vectors_15.webp"/>
 - 단위 벡터는 방향을 알려줄 수 있어 유용함
 - 벡터 정규화 식: $\hat{u} = \frac{\overrightarrow{u}}{||\overrightarrow{u}||}$
