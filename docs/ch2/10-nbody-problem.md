@@ -2,7 +2,7 @@
 sidebar_position: 10
 ---
 
-# 10. 모든 객체의 만유인력 (n-body)
+# 10. 객체 간 만유인력 (n-body)
 
 - 지금까지 하나의 Attractor 객체에 다른 Mover 객체들이 끌려들어가는 예제를 살펴
   보았습니다.
