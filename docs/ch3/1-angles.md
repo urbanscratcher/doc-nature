@@ -26,9 +26,7 @@ sidebar_position: 1
 - ease-in-out: 천천-보통-천천
   :::
 
-## 라디안(radian)과 디그리(degree)
-
-### 라디안이란?
+## 라디안이란?
 
 - p5.js는 디그리(degree)가 아닌 라디안(radian) 단위를 사용합니다.
 - 라디안은 '호의 길이'와 '반지름'의 비율로 각도를 나타내는 단위 입니다.
@@ -36,7 +34,7 @@ sidebar_position: 1
 
 <img width="300px" src="https://natureofcode.com/static/5f7d8c5419a0e1ec08cb3c3696afcc77/29717/03_oscillation_4.webp" />
 
-### 라디안과 디그리 변환
+## 라디안과 디그리 변환
 
 - 호의 길이가 원의 둘레인 $2\pi r$일 때 각도는 $360\degree$입니다.
   - 이는 반지름 $r$을 $2\pi$배 할 때 각도가 $360\degree$라는 말입니다.
@@ -46,7 +44,7 @@ sidebar_position: 1
   - $\theta^\circ = \frac{180}{\pi}\theta_r$ (각도 $\rightarrow$ 라디안)
   - $\theta_r = \frac{\pi}{180}\theta^\circ$ (라디안 $\rightarrow$ 각도)
 
-### p5에서의 라디안과 디그리 변환
+## p5에서의 라디안과 디그리 변환
 
 - p5.js에서는 이러한 공식을 입력하지 않아도 **`angleMode(DEGREES)`** 를 호출하거나 **`radians()`** 를 통해 디그리를 라디안으로 변환할 수 있습니다.
 - $\pi$의 경우 상수 **`PI`** ($180\degree$), **`TWO_PI`** ($360\degree$), **`HALF_PI`** ($90\degree$)를 사용할 수도 있습니다.

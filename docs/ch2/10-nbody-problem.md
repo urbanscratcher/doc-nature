@@ -183,7 +183,7 @@ function setup() {
   }
   ```
 
-### 예제코드 2.9: N개의 Body
+### 예제 코드 2.9: N개의 Body
 
 <iframe class="editor" src="https://editor.p5js.org/urbanscratcher/full/iKdgUJUjF"></iframe>
 - 위 중첩 루프문은 시간 복잡성이 $N^2$ 인 알고리즘입니다. 즉, 계산 횟수가 Body 수의 제곱과 같죠.
