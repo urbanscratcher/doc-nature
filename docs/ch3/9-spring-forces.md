@@ -4,4 +4,7 @@ sidebar_position: 9
 
 # 9. 삼각법과 힘: 진자
 
-- 이 장에서는 힘을 이해하기 위해 기본적인 물리 엔진(물리적인 환경에서 객체의 동작을 시뮬레이션하는 컴퓨터 프로그램이나 코드 라이브러리) 구축에 중점을 둡니다.
+<img class="img-half" src="https://natureofcode.com/static/70f4ca8729ecd7ccddf0cb9d1c75c705/02303/03_oscillation_11.webp" />
+
+- [연습 문제 3.7](../ch3/6-properties-of-oscillation.md#진동수)에서는
+- 뉴턴의 운동 법칙을 다시 떠올려 봅시다.
