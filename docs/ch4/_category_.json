@@ -1,9 +1,9 @@
 {
   "label": "4장 파티클 시스템",
   "position": 4,
-  "collapsed": false,
+  "collapsed": true,
   "link": {
     "type": "generated-index",
-    "description": "TBD"
+    "description": "파티클 시스템, 파티클 방출구(Emitter), 상속과 다형성, 반발력을 이용한 파티클 시스템, 이미지 텍스처와 가산 합성에 대해 알아봅시다."
   }
 }
