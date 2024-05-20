@@ -1,9 +1,9 @@
 {
   "label": "3장 진동",
   "position": 3,
-  "collapsed": false,
+  "collapsed": true,
   "link": {
     "type": "generated-index",
-    "description": "TBD"
+    "description": "라디안, 회전 운동, 삼각법, 코탄젠트, 극 좌표계, 진폭과 주기, 진동, 파동, 용수철 힘, 진자 운동에 대해 알아봅시다."
   }
 }
